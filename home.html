@@ -21,11 +21,10 @@ By Sam Dunn
   <script type="text/javascript">
   $(document).ready(function() {
 
-    spectrum();
 
     function spectrum(){
       var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-      $('.colorful').animate( { color: hue }, 1000);
+      $('.colorful').animate( { color: hue }, 1000, spectrum);
       spectrum();
     }
 
