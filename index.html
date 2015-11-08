@@ -13,7 +13,7 @@ By Sam Dunn
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Margot - Hello world</title>
 	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
-	<script type="text/javascript" src="jquery.color.js"></script>
+	<script type="text/javascript" src="js/jquery.color.js"></script>
 
 	<script type="text/javascript">
 	$(document).ready(function() {
@@ -22,7 +22,6 @@ By Sam Dunn
 
 		function spectrum(){
 			var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-			$('#welcome').animate( { backgroundColor: hue }, 1000);
 			$('.colorful').animate( { color: hue }, 1000);
 			spectrum();
 		}
